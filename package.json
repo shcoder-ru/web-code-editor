@@ -1,0 +1,32 @@
+{
+  "name": "web-code-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ejs": "^0.3.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "dependencies": {
+    "ace-builds": "^1.2.5",
+    "es5-shim": "^4.5.9",
+    "express": "^4.14.0",
+    "html5shiv": "^3.7.3",
+    "jquery": "^3.1.1",
+    "json3": "^3.3.2",
+    "mongoose": "^4.6.3"
+  }
+}
