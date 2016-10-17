@@ -46,18 +46,16 @@ module.exports = function(grunt){
     concat: {
       app: {
         src: [
-          'node_modules/jquery/dist/jquery.js',
+          'node_modules/emmet/emmet.js',
+          'node_modules/ace-builds/src/ace.js',
+          'node_modules/ace-builds/src/mode-html.js',
+          'node_modules/ace-builds/src/theme-tomorrow_night.js',
+          'node_modules/ace-builds/src/mode-css.js',
+          'node_modules/ace-builds/src/ext-emmet.js',
+          'node_modules/ace-builds/src/ext-language_tools.js',
           'client/js/app.js'
         ],
         dest: 'public/js/app.js'
-      },
-      ie: {
-        src: [
-          'node_modules/html5shiv/dist/html5shiv.js',
-          'node_modules/es5-shim/es5-shim.js',
-          'node_modules/json3/lib/json3.js'
-        ],
-        dest: 'public/js/ie.js'
       }
     },
     uglify: {
@@ -78,8 +76,7 @@ module.exports = function(grunt){
           version: '<%= pkg.version %>',
           title: '<%= pkg.name %>',
           css: 'app.css',
-          js: 'app.js',
-          ie: 'ie.js'
+          js: 'app.js'
         },
         src: 'client/ejs/index.ejs',
         dest: 'public/index.html',
@@ -91,8 +88,7 @@ module.exports = function(grunt){
           version: '<%= pkg.version %>',
           title: '<%= pkg.name %>',
           css: 'app.min.css',
-          js: 'app.min.js',
-          ie: 'ie.min.js'
+          js: 'app.min.js'
         },
         src: 'client/ejs/index.ejs',
         dest: 'public/index.html',
