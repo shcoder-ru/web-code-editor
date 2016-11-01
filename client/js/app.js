@@ -1,3 +1,4 @@
+/*
 var htmlEditor = ace.edit('html');
 htmlEditor.session.setMode('ace/mode/html');
 htmlEditor.session.setUseWrapMode(true);
@@ -38,3 +39,4 @@ cssEditor.on('change', function(){
     iframe.contentWindow.document.write(htmlText);
     iframe.contentWindow.document.close();
 });
+*/
