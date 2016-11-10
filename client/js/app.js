@@ -1,10 +1,23 @@
+import '../ejs/index.ejs';
+import '../less/app.less';
+
+import 'script!emmet/emmet';
+import 'script!ace-builds/src/ace';
+import 'script!ace-builds/src/mode-html';
+import 'script!ace-builds/src/theme-tomorrow_night';
+import 'script!ace-builds/src/mode-css';
+import 'script!ace-builds/src/ext-emmet';
+import 'script!ace-builds/src/ext-language_tools';
+
 var htmlEditor = ace.edit('html');
+htmlEditor.session.setUseWorker(false);
 htmlEditor.session.setMode('ace/mode/html');
 htmlEditor.session.setUseWrapMode(true);
 htmlEditor.setTheme('ace/theme/tomorrow_night');
 htmlEditor.setOption('enableEmmet', true);
 htmlEditor.$blockScrolling = Infinity;
 var cssEditor = ace.edit('css');
+cssEditor.session.setUseWorker(false);
 cssEditor.session.setMode('ace/mode/css');
 cssEditor.session.setUseWrapMode(true);
 cssEditor.setTheme('ace/theme/tomorrow_night');
