@@ -31,6 +31,14 @@ module.exports = {
     },
     module: {
         loaders: [{
+            test: /\.jsx$/,
+            include: path.resolve(__dirname + '/client'),
+            loader: 'babel',
+            query: {
+                presets: ['es2015', 'react'],
+                plugins: ['transform-runtime']
+            }
+        }, {
             test: /\.js$/,
             include: path.resolve(__dirname + '/client'),
             loader: 'babel',

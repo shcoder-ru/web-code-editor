@@ -1,5 +1,6 @@
 import '../ejs/index.ejs';
 import '../less/app.less';
+import '../jsx/editor.jsx';
 
 import 'script!emmet/emmet';
 import 'script!ace-builds/src/ace';
