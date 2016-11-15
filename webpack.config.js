@@ -13,7 +13,8 @@ module.exports = {
     entry: './js/app',
     output: {
         path: path.resolve(__dirname + '/dist'),
-        filename: 'assets/app.js'
+        filename: 'assets/app.js',
+        publicPath: 'assets/'
     },
     watch: env === 'development',
     devtool: env === 'development' ? 'inline-source-map' : null,
