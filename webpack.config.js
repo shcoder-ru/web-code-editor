@@ -48,6 +48,9 @@ module.exports = {
                 plugins: ['transform-runtime']
             }
         }, {
+            test: /\.css$/,
+            loader: extractCSS.extract('css!postcss')
+        }, {
             test: /\.less$/,
             loader: extractCSS.extract('css!postcss!less')
         }, {
@@ -60,8 +63,7 @@ module.exports = {
                 limit: 10000,
                 name: 'assets/[hash:8].[ext]'
             }
-        }],
-        noParse: /\/node_modules\/[^!]+$/
+        }]
     },
     plugins: [
         new webpack.DefinePlugin({
