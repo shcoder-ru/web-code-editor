@@ -1,7 +1,7 @@
 WebCodeEditor
 =======
 
-![Screenshot](https://raw.githubusercontent.com/shcoder-ru/web-code-editor/master/Screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/uxter/web-code-editor/master/Screenshot.png)
 
 ##### Development    
 ``` sh
